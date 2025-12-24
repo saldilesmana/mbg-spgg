@@ -23,8 +23,8 @@ function hitungGizi() {
 
   // cari bahan
   const item = dataGizi.find(
-    d => d.bahan.toLowerCase() === namaBahan.toLowerCase()
-  );
+  d => d.Bahan && d.Bahan.toLowerCase() === namaBahan.toLowerCase()
+);
 
   if (!item) {
     alert("Bahan tidak ditemukan di database");
